@@ -1,39 +1,42 @@
-<a id="readme-top"></a>
+# About The Project
+This project aims to identify variables impacting Airbnb rates in well-known European locations. By utilizing machine learning approaches, this project serves as a tool to predict Airbnb prices in various locations, aiding hosts in pricing their listings and providing insights for tourism stakeholders to understand local trends. The models compared include:
 
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
+* Multiple Linear Regression
+* Ridge Regression
+* Random Forest
 
-# airbnb-price-prediction
-This project aims to identify variables impacting Airbnb rates in well-known European locations. By utilizing machine learning approaches, this project serves as a tool to predict Airbnb prices in various locations, aiding hosts in pricing their listings and providing insights for tourism stakeholders to understand local trends.
+## Motivation  
 
-## Quarto Markdown (.qmd) File
+Travel has significantly increased post-pandemic, leading to a surge in demand for vacation accommodations. Airbnb is widely used by travelers to find flexible lodging options. Understanding the factors that impact Airbnb prices is critical for both hosts and tourism stakeholders, helping them make informed decisions about pricing and market trends.This project aims to identify variables impacting Airbnb rates in well-known European locations. By utilizing machine learning approaches, this project serves as a tool to predict Airbnb prices in various locations, aiding hosts in pricing their listings and providing insights for tourism stakeholders to understand local trends. The models compared include:
 
-The repository contains a Quarto Markdown (.qmd) file, which includes the code, analysis, and visualizations used in this project. Quarto is a versatile tool that allows for the creation of reproducible reports, combining code, markdown, and rich outputs in a single document. 
+### Built With
 
-### How to Use the .qmd File
+- **Python**
+- **R** (via `reticulate` in Quarto)
+- **Quarto**: Used to create the `.qmd` file and render the analysis report.
+- **Pandas**: For data manipulation and cleaning.
+- **NumPy**: For numerical operations.
+- **Seaborn**: For data visualization.
+- **Scikit-learn**: For machine learning models (Multiple Linear Regression, Ridge Regression, and Random Forest) and evaluation metrics.
+- **GridSearchCV**: For hyperparameter tuning to optimize model performance.
+  
+
+### Data
+
+The dataset used for this project is located in the `data` folder:
+
+* `airbnb_prices.csv`: Contains Airbnb listing information such as room type, host information, location, and listing price.
+
+
+
+
+
+## Getting started  
+### Quarto Markdown (.qmd) File
+
+The repository contains a Quarto Markdown (.qmd) file, which includes the code, analysis, and visualizations used in this project. You can view the fully rendered file as a .pdf in the `results` folder. 
+
+#### How to Use the .qmd File
 
 1. **Viewing the .qmd file**: You can view the file directly in the repository, where the markdown content will render, but the code execution outputs may not display unless you render the document locally.
 
@@ -49,7 +52,7 @@ The repository contains a Quarto Markdown (.qmd) file, which includes the code, 
 3. **Exploring the Code and Analysis**: The `.qmd` file contains:
    - **Data preprocessing steps** such as scaling and splitting datasets.
    - **Machine learning models** (Multiple Linear Regression, Ridge Regression, Random Forest) used to predict Airbnb prices.
-   - **Evaluation metrics** like RMSE to assess model performance.
+   - **Evaluation metrics** like RMSE amd data visualizations to assess model performance.
    - **Discussion and insights** based on the results, with ethical considerations surrounding the use of these models in real-world applications.
 
 ## Usage
@@ -62,8 +65,5 @@ The repository contains a Quarto Markdown (.qmd) file, which includes the code, 
 
 Results will be printed as RMSE values for training and validation sets for each model.
 
-# Usage
 
-Stakeholders using this model should be aware of potential biases in the data, such as price discrimination among Airbnb listings, which could contribute to gentrification and housing shortages. To ensure fair application, the model should be reviewed by local stakeholders familiar with the area. This collaboration promotes equity and visibility across different interests, ensuring that decisions based on the model are informed and responsible.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
