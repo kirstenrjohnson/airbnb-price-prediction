@@ -1,3 +1,31 @@
+<a id="readme-top"></a>
+
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
+
 # airbnb-price-prediction
 This project aims to identify variables impacting Airbnb rates in well-known European locations. By utilizing machine learning approaches, this project serves as a tool to predict Airbnb prices in various locations, aiding hosts in pricing their listings and providing insights for tourism stakeholders to understand local trends.
 
@@ -34,6 +62,8 @@ The repository contains a Quarto Markdown (.qmd) file, which includes the code, 
 
 Results will be printed as RMSE values for training and validation sets for each model.
 
-## Ethical Considerations
+# Usage
 
 Stakeholders using this model should be aware of potential biases in the data, such as price discrimination among Airbnb listings, which could contribute to gentrification and housing shortages. To ensure fair application, the model should be reviewed by local stakeholders familiar with the area. This collaboration promotes equity and visibility across different interests, ensuring that decisions based on the model are informed and responsible.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
